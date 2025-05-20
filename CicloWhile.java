@@ -15,7 +15,13 @@ public class CicloWhile {
     }
 
     //Decision de numeros
-    
+    public static void verificarNumero(int numero){
+        while (numero <= 0) {
+            System.out.println("Numero negativo o cero: " + numero);
+            numero = obtenerNumero("Ingresa un numero entero: ");
+        }
+        System.out.println("Numero positivo: " + numero);
+    }
 
     //Metodo principal main
     public static void main(String[] args){
